@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>weather app</title>
+  <link rel="icon" href="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+ 
+  <div class="container">
+    <h2>Weather</h2>
+    <div class="row">
+      <div class="col-6" id="search-box">
+        <!-- input-box -->
+        
+          <i class="fa-solid fa-location-dot"></i>
+          <input type="search" id="searchBox" placeholder="Enter your location">
+          <button type="submit" onclick="searchWeather()" class="fa-solid fa-magnifying-glass"></button>      
+     </div>
+      <div id="weather-box" class="col-6">
+        <!-- weather details -->
+        <div class="weather-details">
+          <div class="col-6 text-center displayDetails">
+              <div class="">
+                <p>Country</p>
+                <p style="color: white;" id="country">&nbsp;</p>
+              </div>
+              <div>
+                <p>climate</p>
+                <p style="color: white;" id="climate">&nbsp;</p>
+              </div>
+              <div>
+                <p>Wind</p>
+                <p style="color: white;" id="wind">&nbsp;</p>
+              </div>
+              <div class="mb-4">
+                <p>Pressure</p>
+                <p style="color: white;" id="pressure">&nbsp;</p>
+              </div>
+            </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>

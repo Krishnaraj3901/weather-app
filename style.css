@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body{
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://wallpapercave.com/wp/a1tlfX1.jpg);
+}
+.container{
+  width: 500px;
+  height: 600px;
+  background:transparent;
+  margin: 50px;
+  padding: 18px 20px;
+  border-radius: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+#search-box{
+  height: min-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin: 10px;
+
+}
+#search-box input{
+  width: 50%;
+  padding:5px;
+  margin-right:10px;
+  border-radius: 20px;
+
+}
+#search-box i{
+  width: 15px;
+  border-radius: 10px;
+  
+}
+#search-box button{
+  background: none;
+  border-radius: 100%;
+  width:auto;
+  height: 20px;
+  border-radius: 20px;
+  font-size: 25px;
+
+}
+#search-box button:hover{
+  background-color: aliceblue;
+  cursor: pointer;
+}
+#weather-box{
+  width: 90%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border-radius: 25px;
+  margin-right: 50px;
+}
+.weather-details{
+  width: 80%;
+  height: 400px;
+  display: flex;
+  padding: 20px;
+  background:transparent;
+  border-radius: 20px;
+  border: 4px solid whitesmoke;
+}
